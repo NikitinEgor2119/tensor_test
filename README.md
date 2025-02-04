@@ -37,6 +37,17 @@ pip install -r requirements.txt
 
 ## Запуск тестов
 
+### ВНИМАНИЕ!
+
+## Перед запуском второго сценария:
+
+В файле test_second.py
+
+```initial_region = contacts_page.get_current_region()
+assert "Вологодская" in initial_region, f"Ожидали 'Вологодская', получили '{initial_region}'"
+Заменить область "Вологодская" на вашу область в "Пример"
+```
+
 ### Запуск всех тестов
 
 ```sh
